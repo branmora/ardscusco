@@ -9,5 +9,4 @@ shinyServer(function(input, output, session){
   source("tabs/server/documentacion.R", local = TRUE)
   source("tabs/server/espacios.R", local = TRUE)
   
-  
 })
