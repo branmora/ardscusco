@@ -1,6 +1,3 @@
-/* custom */
-
-
 /* navbar */
 
 .navbar {
@@ -73,47 +70,24 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
-
-.col-sm-4 {
-	height: 100px;
-	width: 400px;
-	margin-left: 1px;
-    display: table;
-    border-radius: 10px;
-    margin-bottom: 20px;
-	background-color: #000445b5;
-	color: #FFFFFF;
-	text-align: center;
-	vertical-align: middle;
-	font-family: 'Open Sans', sans-serif;
-}
-
-
-.col-sm-6 {
-	margin-bottom: 4px;
-	margin-top: 4px;
-	border: 2px solid #d9d9d9;
-	border-radius: 10px 10px 10px 10px;
-}
-
 .nav-tabs>li>a {
     margin-right: 2px;
     line-height: 1.42857143;
-    border: 1px solid #d9d9d9;
-    background-color: #000445b5;
+    border: 1px solid #ffffff;
+    background-color: #a02021b5;
     color: white;
     border-radius: 4px 4px 0 0;
 }
 
 .nav-tabs>li>a:hover {
     border-color: #eee #eee #ddd;
-    background: #00044599;
+    background: #a0202199;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     color: #fff;
     cursor: default;
-    background-color: #000445;
+    background-color: #a02021;
     border: 1px solid #ddd;
     border-bottom-color: transparent;
 }
@@ -184,7 +158,6 @@ a:focus, a:hover {
 .container-fluid {
     padding-left: 10px;
     padding-right: 10px;
-	
 }
 
 /* sidebar */
@@ -195,7 +168,7 @@ a:focus, a:hover {
 }
 
 .well {
-    background-color: #b3bdde;
+    background-color: #e8ebf5;
 }
 
 .selectize-input.full {
@@ -224,35 +197,56 @@ hr {
     padding-top: 10px;
     padding-right: 100px;
     padding-left: 100px;
-	background-color: #fff;
 }
 
 .imgContainerFooter{
     padding-top: 20px;
     float: right;
-	background-color: #fff;
 }
 
 .imgContainerFooter img {
    height: 40px;
    padding: 5px 5px 5px 5px;
-   background-color: #fff;
 }
 
 .logoContainerFooter{
    padding-top: 0px;
    float: left;
-   background-color: #fff;
 }
 
 .logoContainerFooter img {
    height: 50px;
-   background-color: #fff;
 }
 
-.site-footer {
-  background-color: #fff;
+
+
+.img_footer2{
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
+
+.imgContainerFooter2{
+    padding-top: 20px;
+    float: right;
+}
+
+.imgContainerFooter2 img {
+   height: 40px;
+   padding: 5px 5px 5px 5px;
+}
+
+.logoContainerFooter2{
+   padding-top: 0px;
+   float: right;
+}
+
+.logoContainerFooter2 img {
+   height: 50px;
+}
+
+
+
 
 .h3, h3 {
     line-height: 0.9;
@@ -308,49 +302,3 @@ th {
 .leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
     position: sticky !important;
 }
-
-
-
-
-
-/* addons */
-.dygraph-legend {
-                  width: auto !important;
-                  min-width: 150px;
-                  color: #000445;
-                  background-color: rgb(250, 250, 250, 0.4) !important;
-                  padding-left:5px;
-                  border-color:#000445;
-                  border-style:solid;
-                  border-width:3px;
-                  transition:0s 2s;
-                  z-index: 80 !important;
-                  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
-                  border-radius: 0px;
-                  }
-                  .dygraph-legend:hover{
-                  transform: translate(-110%);
-                  transition: 3s;
-                  }
-                
-                  .dygraph-legend > span {
-                    color: black;
-                    padding-left:5px;
-                    padding-right:2px;
-                    margin-left:-5px;
-                    background-color: rgb(250, 250, 250, 0.4) !important;
-                    display: block;
-                  }
-                
-                  .dygraph-legend > span:first-child {
-                    margin-top:2px;
-                  }
-
-                  .dygraph-legend > span > span{
-                    display: inline;
-                  }
-                  
-                  .highlight {
-                    border-left: 3px solid #000445;
-                    padding-left:3px !important;
-                  }

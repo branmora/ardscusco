@@ -2,31 +2,32 @@ observeEvent(input$navbar,{
   if(input$navbar == "home"){
     sendSweetAlert(
       session = session,
-      title = "Don't you have much time?",
-      text = HTML("Please click here and go first to: <br> 
-                  <h3><b><a id='link_info' href='#' class='action-button'><i class='fas fa-arrow-right'></i> Voter profile <i class='fas fa-arrow-left'></i></a></b></h3> 
-                  <br> This is our methodological contribution using the voronoi tessellation. Using this methodology, we can see the results of the elections at a more disaggregated level."),
+      title = "",
+      text = HTML("Haga clic aquí y vaya primero a: <br> 
+                  <h3><b><a id='link_info' href='#' class='action-button'><i class='fas fa-arrow-right'></i> Documentación <i class='fas fa-arrow-left'></i></a></b></h3> 
+                  <br> Aquí encontrarrá la documentación de la Agencia Regional de Desarrollo Social del Gobierno Regional Cusco"),
       type = "info", 
       html = TRUE,
+      btn_colors = "#125d96",
       closeOnClickOutside = FALSE
     )
   }
 })
 
-##-- + Atualizando abas conforme os cliques ----
-observeEvent(input$analise_geral,{
-  updateTabsetPanel(session = session, inputId = "navbar", selected = "eleicoes")
+##-- + Actualización de acuerdo a los clicks ----
+observeEvent(input$acerca_de,{
+  updateTabsetPanel(session = session, inputId = "navbar", selected = "acerca_de")
 })
-observeEvent(input$analise_partidos,{
-  updateTabsetPanel(session = session, inputId = "navbar", selected = "partidos")
+observeEvent(input$que_hacemos,{
+  updateTabsetPanel(session = session, inputId = "navbar", selected = "que_hacemos")
 })
-observeEvent(input$analise_candidatos,{
-  updateTabsetPanel(session = session, inputId = "navbar", selected = "candidatos")
+observeEvent(input$documentacion,{
+  updateTabsetPanel(session = session, inputId = "navbar", selected = "documentacion")
 })
-observeEvent(input$sobre,{
-  updateTabsetPanel(session = session, inputId = "navbar", selected = "sobre")
+observeEvent(input$espacios,{
+  updateTabsetPanel(session = session, inputId = "navbar", selected = "espacios")
 })
 observeEvent(input$link_info,{
-  updateTabsetPanel(session = session, inputId = "navbar", selected = "candidatos_perfil_eleitorado")
-  closeSweetAlert(session = session)
+updateTabsetPanel(session = session, inputId = "navbar", selected = "documentacion")
+closeSweetAlert(session = session)
 })

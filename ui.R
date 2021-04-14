@@ -20,20 +20,22 @@ shinyUI(
                         type="image/png" />'))),
     div(style="padding: 1px 0px; width: '100%'",
         titlePanel(
-          title="", windowTitle = "GERESA Dashboard"
+          title="", windowTitle = "ARDS | GORE CUSCO"
         )
     ),
     ##-- Header ----
     navbarPage(title = div(img(src="img/logo.png",
                                height = "110px"), style = "padding-left:50px;"),
                id = "navbar",
-               selected = "regional",
+               selected = "home",
                theme = "styles.css", 
                fluid = T,
                ##-- Tablas ----
-               regional,
-               provincial,
-               local
+               home,
+               acerca_de,
+               que_hacemos,
+               documentacion,
+               espacios
     ),
     ##-- Footer ----
     div(class = "footer",

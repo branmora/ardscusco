@@ -29,7 +29,7 @@ library(waiter)
 
 ##--utilidades  ----
 source("functions/utils.R")
-colores <- c("#098ebb", "#fdc23a", "#e96449", "#818286")
+colores <- c("#11b5be", "#f3922b", "#94338b", "#107b37")
 
 ##-- Componentes de header shiny ----
 tab_files <- list.files(path = "tabs", full.names = T, recursive = T)
